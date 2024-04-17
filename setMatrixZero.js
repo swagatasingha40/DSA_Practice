@@ -21,7 +21,6 @@ function printMatrix() {
 }
 
 //brute force approach start
-
 function setRow(matrix, n, m, i) {
   for (k = 0; k < m; k++) {
     if (matrix[i][k] !== 0) matrix[i][k] = -1;
@@ -53,11 +52,11 @@ function bruteForceApproach(matrix, n, m) {
     }
   }
 }
-
 //time complexity : (n * m) * (n + m) + (n * m) ~ O(n^3)
 //space complexity : O(1)
-
 //brute force approach end
+
+//better approach
 
 const matrix = [
   [0, 1, 2, 0],
